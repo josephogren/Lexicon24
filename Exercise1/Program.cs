@@ -1,0 +1,8 @@
+﻿/////////////////////////////////////////////////////////////////
+//          Program: Exercise 1 - Lexicon .Net 2024
+//          Author:  joseph.ar.ogren@pm.me
+//          Date:    2024/03/23
+/////////////////////////////////////////////////////////////////
+
+
+Console.WriteLine("Exercise 1 - Lexicon .Net 2024");
