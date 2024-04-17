@@ -1,6 +1,11 @@
 using MVC_Ex11.Models;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.DependencyInjection;
+using MVC_Ex11.Data;
 
 var builder = WebApplication.CreateBuilder(args);
+builder.Services.AddDbContext<MVC_Ex11Context>(options =>
+    options.UseSqlServer(builder.Configuration.GetConnectionString("MVC_Ex11Context") ?? throw new InvalidOperationException("Connection string 'MVC_Ex11Context' not found.")));
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
